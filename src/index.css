@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav li a {
+  @apply p-4 py-5 text-lg;
+}
+
+nav li a:hover {
+  @apply text-blue-800;
+}
