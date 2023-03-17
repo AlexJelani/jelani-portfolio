@@ -2,10 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Color */
+.bg-primary {
+  background: #0F172A;
+}
+
 nav li a {
-  @apply p-4 py-5 text-lg;
+  @apply px-4 py-5 text-lg;
 }
 
 nav li a:hover {
   @apply text-blue-800;
+}
+
+.mobile-nav {
+  @apply block md:hidden fixed  top-10 py-2 h-full w-full bg-gray-900 duration-500;
 }

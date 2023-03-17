@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Header = () => {
+  const [toggle, setToggle] = useState(false);
+
+  const handleToggle = () => setToggle(!toggle);
   return (
-    <header className="flex justify-between px-5 py-2 bg-gray-900 text-white">
+    <header className="flex justify-between px-5 py-2 bg-primary text-white">
       <a href="/" className="logo text-2xl font-bold">
-        Jelani
+        JelaniA
       </a>
       {/* Desktop Nav */}
       <nav className="hidden md:block">
@@ -25,7 +29,13 @@ const Header = () => {
       </nav>
 
       {/* Mobile Nav */}
-      <nav className="block md:block fixed left-0 right-0 top-10 py-2 h-full bg-gray-900">
+      <nav
+        className={
+          !toggle
+            ? "mobile-nav left-[-100%]"
+            : "mobile-nav left-0"
+        }
+      >
         <ul className="flex flex-col">
           <li>
             <a href="/#">About</a>
@@ -43,8 +53,8 @@ const Header = () => {
       </nav>
 
       {/* Toggle button */}
-      <button>
-        
+      <button onClick={handleToggle} className="block md:hidden">
+        {!toggle ? <AiOutlineMenu size={30} /> : <AiOutlineClose size={30} />}
       </button>
     </header>
   );
