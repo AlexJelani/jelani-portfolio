@@ -10,14 +10,14 @@ const Hero = () => {
           Hi <br />I am <span className="logo">J</span>elani <br />
           frontend developer
         </h1>
-        <p>
+        <p className="py-5">
           I am proficent in React.js, React Native, Tailwind and Material UI
           CSS.
         </p>
-        <button>See projects</button>
+        <button className="btn">See projects</button>
       </div>
       <div className="hero-img">
-        <img src={HeroImg} alt="coding illustration" className="w-[-80] ml-auto" />
+        <img src={HeroImg} alt="coding illustration" className="lgw-[80%] w-96 ml-auto rounded-full" />
       </div>
       </div>
     </section>
