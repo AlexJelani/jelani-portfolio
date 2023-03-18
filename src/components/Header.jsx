@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header className="flex justify-between px-5 py-2 bg-primary text-white">
       <a href="/" className="logo text-2xl font-bold">
-        JelaniA
+        Jelani
       </a>
       {/* Desktop Nav */}
       <nav className="hidden md:block">
