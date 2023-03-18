@@ -27,3 +27,6 @@ nav li a:hover {
 .mobile-nav {
   @apply block md:hidden fixed  top-10 py-2 h-full w-full bg-gray-900 duration-500;
 }
+.logo {
+  color: #7477FF; /* set the text color to the desired color */
+}
