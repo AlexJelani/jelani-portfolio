@@ -6,15 +6,27 @@
 .bg-primary {
   background: #0F172A;
 }
+.bg-secondary {
+  background: #1E293B;
+}
+.bg-accent {
+  background: #7477FF;
+}
+.text-accent {
+  background: #7477FF;
+}
 
 nav li a {
-  @apply px-4 py-5 text-lg;
+  @apply px-4 py-5 text-xl;
 }
 
 nav li a:hover {
-  @apply text-blue-800;
+  color: #7477FF;
 }
 
 .mobile-nav {
   @apply block md:hidden fixed  top-10 py-2 h-full w-full bg-gray-900 duration-500;
+}
+.logo {
+  color: #7477FF; /* set the text color to the desired color */
 }
