@@ -14,7 +14,7 @@ const Hero = () => {
           I am proficent in React.js, React Native, Tailwind and Material UI
           CSS.
         </p>
-        <button className="btn">See projects</button>
+        <button className="btn bg-accent text-white px-4 py-2">See projects</button>
       </div>
       <div className="hero-img">
         <img src={HeroImg} alt="coding illustration" className="lgw-[80%] w-96 ml-auto rounded-full" />
