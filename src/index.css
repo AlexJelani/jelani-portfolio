@@ -30,3 +30,13 @@ nav li a:hover {
 .logo {
   color: #7477FF; /* set the text color to the desired color */
 }
+.hero-img {
+  border-radius: 200px;
+  line-height: 1.5 !important;
+} 
+/* hero */
+
+h1 {
+  font-family: 'Pacifico', cursive;
+
+}

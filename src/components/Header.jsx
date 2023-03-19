@@ -7,7 +7,7 @@ const Header = () => {
   const handleToggle = () => setToggle(!toggle);
   return (
     <header className="flex justify-between px-5 py-2 bg-primary text-white">
-      <a href="/" className="logo text-2xl font-bold ">
+      <a href="/" className="logo text-2xl font-bold">
         Jelani
       </a>
       {/* Desktop Nav */}
