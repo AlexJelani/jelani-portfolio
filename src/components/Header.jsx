@@ -14,7 +14,7 @@ const Header = () => {
       <nav className="hidden md:block">
         <ul className="flex">
           <li>
-            <a href="/#">About</a>
+            <a href="/#about">About</a>
           </li>
           <li>
             <a href="/#projects">Projects</a>
