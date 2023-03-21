@@ -7,30 +7,30 @@ import project4 from "../assets/cartreact.png"
 const Projects = () => {
   const projects = [
     {
-      img: portfolio,
+      img: project1,
       title: "My Portfolio",
       desc: " A portfolio website built with React and Tailwind CSS ",
       live: "https://devlogg.onrender.com/",
       code: "https://github.com/Coderamrin/devlog",
     },
     {
-      img: friendtracker,
+      img: project2,
       title: "Social Media Friend Tracker",
-      desc: "Social Media Friend Tracker built with <b>React, CSS, and custom API backend for CRUD operations</b>.",
+      desc: "Social Media Friend Tracker built with React, CSS, and custom API backend for CRUD operations.",
       live: "https://uilogs.xyz/",
       code: "https://github.com/Coderamrin/html-templates",
     },
     {
-      img: reactdictionary,
+      img: project3,
       title: "A React Dictionary",
-      desc: " A Full-Stack React Dictionary app with an <b>Express backend, Tailwind UI,</b> and data from two APIs.",
+      desc: " A Full-Stack React Dictionary app with an Express backend, Tailwind UI,and data from two APIs.",
       live: "https://build-10-css-projects.netlify.app/",
       code: "https://github.com/Coderamrin/build-10-css-projects",
     },
     {
-      img: reactcart,
+      img: project4,
       title: "React-TypeScript Shopping Cart",
-      desc: "A responsive e-commerce shopping cart app is built using <b>React and TypeScript</b> ",
+      desc: "A responsive e-commerce shopping cart app is built using <b>React and TypeScript",
       live: "https://get-inspirred.netlify.app/",
       code: "https://github.com/Coderamrin/get-inspired",
     },
