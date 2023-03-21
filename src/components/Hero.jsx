@@ -8,10 +8,10 @@ const Hero = () => {
       <div className="hero-info pb-5 md:pb-0">
         <h1 className="text-2xl  lg:text-5xl">
           Hi, <br />I am <span className="logo">J</span>elani <br />
-          frontend developer
+         Frontend Developer
         </h1>
         <p className="py-5">
-          I am proficent in React.js, React Native, Tailwind and Material UI
+          I am proficent in React.js, TypeScript, React Native, Tailwind and Material UI
           CSS.
         </p>
         <button className="btn bg-accent border-2 border-[#7477FF] text-white px-4 py-2 hover:bg-transparent">See projects</button>
