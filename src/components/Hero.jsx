@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="bg-primary text-white py-32">
         <div className="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between">
       <div className="hero-info pb-5 md:pb-0">
-        <h1 className="text-2xl  lg:text-5xl">
+        <h1 className="text-4xl  lg:text-5xl">
           Hi, <br />I am <span className="logo">J</span>elani <br />
          Frontend Developer
         </h1>
