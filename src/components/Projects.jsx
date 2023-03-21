@@ -1,8 +1,8 @@
 import React from "react";
-import project1 from "../assets/portfolio.png"
+import project1 from "../assets/portfoliosite.png"
 import project2 from "../assets/friendtracker.png"
 import project3 from "../assets/reactdictionary.png"
-import project4 from "../assets/cartreact.png"
+import project4 from "../assets/greatdev.png"
 
 const Projects = () => {
   const projects = [
@@ -30,7 +30,7 @@ const Projects = () => {
     {
       img: project4,
       title: "React-TypeScript Shopping Cart",
-      desc: "A responsive e-commerce shopping cart app is built using <b>React and TypeScript",
+      desc: "A responsive e-commerce shopping cart app is built using React and TypeScript",
       live: "https://get-inspirred.netlify.app/",
       code: "https://github.com/Coderamrin/get-inspired",
     },
