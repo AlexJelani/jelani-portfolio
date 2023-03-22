@@ -52,32 +52,25 @@ const Projects = () => {
       <div className="about-img">
 
       </div>
-      <div className="projects container mx-auto grid md:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
         {projects.map((project, i) => {
           return (
-            <div className="relative" key={i}>
-              <img src={project.img} alt={project.title} />
-              <div className="flex absolute left-0 right-0 top-[13px] bottom-0 mx-auto w-[90%] h-[90%]  bg-primary  opacity-0 duration-500 justify-center flex-col hover:opacity-100  show-on-mobile">
-                <p className="py-5 text-center font-bold px-2 text-white">
-                  {project.desc}
-                </p>
-
-                <div className="mx-auto">
-                  <a
-                    href={project.live}
-                    className="px-5 py-2 bg-blue-500 hover:bg-blue-600 mr-5 font-bold"
-                  >
-                    Live
-                  </a>
-                  <a
-                    href={project.code}
-                    className="px-5 py-2 bg-blue-700 hover:bg-blue-800 font-bold"
-                  >
-                    Code
-                  </a>
-                </div>
-              </div>
+            <div
+            key={i}
+            className="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
+            style={{ backgroundImage: `url('${project.img}')` }}
+          >
+            <div
+              className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100"
+            >
+              <h2 className="mt-4 text-xl font-semibold text-white capitalize">
+                {project.title}
+              </h2>
+              <p className="mt-2 text-lg tracking-wider text-blue-400 uppercase ">
+                {project.desc}
+              </p>
             </div>
+          </div>
           );
         })}
       </div>
@@ -87,7 +80,7 @@ const Projects = () => {
 
 export default Projects;
 
-<div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
+{/* <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3"> */}
 <div class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
     style="background-image:url('https://images.unsplash.com/photo-1621111848501-8d3634f82336?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1565&q=80')">
     <div
