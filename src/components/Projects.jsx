@@ -49,7 +49,7 @@ const Projects = () => {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
+      <div className="max-w-[1536px] grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3 mx-auto">
         {projects.map((project, i) => {
           return (
             <div
