@@ -8,9 +8,15 @@ const Header = () => {
   const handleToggle = () => setToggle(!toggle);
   return (
     <header className="sticky top-0 z-50 flex justify-between px-5 py-2 bg-primary text-white">
-      <a href="/" className="logo text-2xl font-bold">
-        Jelani <span><Socials/></span>
-      </a>
+      <div className="flex items-center">
+        <a href="/" className="logo text-2xl font-bold flex items-center">
+          Jelani
+          <div className="ml-4">
+            <Socials />
+          </div>
+        </a>
+      </div>
+
       {/* Desktop Nav */}
       <nav className="hidden md:block">
         <ul className="flex">
@@ -31,11 +37,7 @@ const Header = () => {
 
       {/* Mobile Nav */}
       <nav
-        className={
-          !toggle
-            ? "mobile-nav left-[-100%]"
-            : "mobile-nav left-0"
-        }
+        className={!toggle ? "mobile-nav left-[-100%]" : "mobile-nav left-0"}
       >
         <ul className="flex flex-col">
           <li>
