@@ -1,8 +1,8 @@
 import React from "react";
-import project1 from "../assets/portfoliosite.png"
-import project2 from "../assets/friendtracker.png"
-import project3 from "../assets/reactdictionary.png"
-import project4 from "../assets/greatdev.png"
+import project1 from "../assets/portfoliosite.png";
+import project2 from "../assets/friendtracker.png";
+import project3 from "../assets/reactdictionary.png";
+import project4 from "../assets/greatdev.png";
 
 const Projects = () => {
   const projects = [
@@ -49,29 +49,40 @@ const Projects = () => {
           </p>
         </div>
       </div>
-      <div className="about-img">
-
-      </div>
+      <div className="about-img"></div>
       <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
         {projects.map((project, i) => {
           return (
             <div
-            key={i}
-            className="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
-            style={{ backgroundImage: `url('${project.img}')` }}
-          >
-            <div
-              className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100"
+              key={i}
+              className="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
+              style={{ backgroundImage: `url('${project.img}')` }}
             >
-              <h2 className="mt-4 text-xl font-semibold text-white capitalize">
-                {project.title}
-              </h2>
-              <p className="mt-2 text-lg tracking-wider text-blue-400 uppercase ">
-                {project.desc}
-              </p>
+              <div className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
+                <h2 className="mt-4 text-xl font-semibold text-white capitalize">
+                  {project.title}
+                </h2>
+                <p className="mt-2 text-lg tracking-wider text-blue-400 uppercase ">
+                  {project.desc}
+                </p>
+                <div className="flex justify-center">
+                  <div className="inline-block">
+                    <a href={project.github} target="_blank">
+                      <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                        Code
+                      </button>
+                    </a>
+                  </div>
+                  <div className="inline-block">
+                    <a href={project.live} target="_blank">
+                      <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                        Live
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-
-          </div>
           );
         })}
       </div>
@@ -81,29 +92,22 @@ const Projects = () => {
 
 export default Projects;
 
-<a href={project.github} target="_blank">
-<button
-  className="text-center rounded-lg px-4 py-3 m-2
+/* <a href={project.github} target="_blank">
+  <button
+    className="text-center rounded-lg px-4 py-3 m-2
              bg-white text-gray-700 font-bold text-lg"
->
-  Code
-</button>
-</a>
-{/* eslint-disable-next-line */}
-<a href={project.live} target="_blank">
-<button
-  className="text-center rounded-lg px-4 py-3 m-2
-             bg-white text-gray-700 font-bold text-lg"
->
-  Live
-</button>
-</a>
-
-
-
-
-
-
-
-
-
+  >
+    Code
+  </button>
+</a>;
+{
+  /* eslint-disable-next-line */
+// }
+// <a href={project.live} target="_blank">
+//   <button
+//     className="text-center rounded-lg px-4 py-3 m-2
+//              bg-white text-gray-700 font-bold text-lg"
+//   >
+//     Live
+//   </button>
+// </a>; */}
