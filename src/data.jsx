@@ -1,15 +1,16 @@
 //  icons
-import { FaLinkedin, FiGithub, FiLinkedin } from "react-icons/fi";
+import { FiGithub} from "react-icons/fi";
+import { FaLinkedin } from 'react-icons/fa';
 
 // social
 export const social = [
   {
-    icon: <FiLinkedin />,
+    icon: <FaLinkedin style={{fontSize:"xx-large"}} />,
     href: "",
   },
 
   {
-    icon: <FiGithub />,
+    icon: <FiGithub style={{fontSize:"xx-large"}}  />,
     href: "",
   },
 ];

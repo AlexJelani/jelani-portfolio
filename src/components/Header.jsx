@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import Socials from "./Socials";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
 
   const handleToggle = () => setToggle(!toggle);
   return (
-    <header className="flex justify-between px-5 py-2 bg-primary text-white">
+    <header className="sticky top-0 z-50 flex justify-between px-5 py-2 bg-primary text-white">
       <a href="/" className="logo text-2xl font-bold">
-        Jelani
+        Jelani <span><Socials/></span>
       </a>
       {/* Desktop Nav */}
       <nav className="hidden md:block">
