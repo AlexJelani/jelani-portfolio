@@ -98,11 +98,11 @@ textarea:focus {
 }
 
 .show-on-mobile {
-  opacity: 1;
+  opacity: 0;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 1199px) {
   .show-on-mobile {
-    opacity: 0;
+    opacity: 1;
   }
 }
