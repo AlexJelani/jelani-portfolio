@@ -4,14 +4,14 @@ import Hero from "./components/Hero"
 import About from "./components/About"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
-import Projectstwo from "./components/Projectstwo"
+import Projects from "./components/Projects"
 function App() {
   return (
     <>
       <Header/>
       <Hero/>
       <About/>
-      <Projectstwo/>
+      <Projects/>
       <Contact/>
       <Footer/>
     </>

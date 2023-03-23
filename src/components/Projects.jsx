@@ -1,8 +1,8 @@
 import React from "react";
-import project1 from "../assets/portfoliosite.png"
-import project2 from "../assets/friendtracker.png"
-import project3 from "../assets/reactdictionary.png"
-import project4 from "../assets/greatdev.png"
+import project1 from "../assets/portfoliosite.png";
+import project2 from "../assets/friendtracker.png";
+import project3 from "../assets/reactdictionary.png";
+import project4 from "../assets/greatdev.png";
 
 const Projects = () => {
   const projects = [
@@ -11,28 +11,28 @@ const Projects = () => {
       title: "My Portfolio",
       desc: " A portfolio website built with React and Tailwind CSS ",
       live: "https://devlogg.onrender.com/",
-      code: "https://github.com/Coderamrin/devlog",
+      github: "https://github.com/Coderamrin/devlog",
     },
     {
       img: project2,
       title: "Social Media Friend Tracker",
       desc: "Social Media Friend Tracker built with React, CSS, and custom API backend for CRUD operations.",
       live: "https://uilogs.xyz/",
-      code: "https://github.com/Coderamrin/html-templates",
+      github: "https://github.com/Coderamrin/html-templates",
     },
     {
       img: project3,
       title: "A React Dictionary",
       desc: " A Full-Stack React Dictionary app with an Express backend, Tailwind UI,and data from two APIs.",
       live: "https://build-10-css-projects.netlify.app/",
-      code: "https://github.com/Coderamrin/build-10-css-projects",
+      github: "https://github.com/Coderamrin/build-10-css-projects",
     },
     {
       img: project4,
       title: "React-TypeScript Shopping Cart",
       desc: "A responsive e-commerce shopping cart app is built using React and TypeScript",
       live: "https://get-inspirred.netlify.app/",
-      code: "https://github.com/Coderamrin/get-inspired",
+      github: "https://github.com/Coderamrin/get-inspired",
     },
   ];
   return (
@@ -49,32 +49,37 @@ const Projects = () => {
           </p>
         </div>
       </div>
-      <div className="about-img">
-
-      </div>
-      <div className="projects container mx-auto grid md:grid-cols-3 gap-10">
+      <div className="about-img"></div>
+      <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
         {projects.map((project, i) => {
           return (
-            <div className="relative" key={i}>
-              <img src={project.img} alt={project.title} />
-              <div className="flex absolute left-0 right-0 top-[13px] bottom-0 mx-auto w-[90%] h-[90%]  bg-primary  opacity-0 duration-500 justify-center flex-col hover:opacity-100  show-on-mobile">
-                <p className="py-5 text-center font-bold px-2 text-white">
+            <div
+              key={i}
+              className="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group "
+              style={{ backgroundImage: `url('${project.img}')` }}
+            >
+              <div className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100 show-on-mobile">
+                <h2 className="mt-4 text-xl font-semibold text-white capitalize">
+                  {project.title}
+                </h2>
+                <p className="mt-2 text-lg tracking-wider text-blue-400 uppercase ">
                   {project.desc}
                 </p>
-
-                <div className="mx-auto">
-                  <a
-                    href={project.live}
-                    className="px-5 py-2 bg-blue-500 hover:bg-blue-600 mr-5 font-bold"
-                  >
-                    Live
-                  </a>
-                  <a
-                    href={project.code}
-                    className="px-5 py-2 bg-blue-700 hover:bg-blue-800 font-bold"
-                  >
-                    Code
-                  </a>
+                <div className="flex justify-center">
+                  <div className="inline-block">
+                    <a href={project.github} target="_blank">
+                      <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                        Code
+                      </button>
+                    </a>
+                  </div>
+                  <div className="inline-block">
+                    <a href={project.live} target="_blank">
+                      <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                        Live
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -86,3 +91,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
